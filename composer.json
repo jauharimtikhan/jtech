@@ -16,7 +16,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "jauhar/j-tech-framework": "v1.0.7"
+        "jauhar/j-tech-framework": "v1.0.8"
     },
     "prefer-stable": true,
     "scripts": {
