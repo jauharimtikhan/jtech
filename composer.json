@@ -1,0 +1,23 @@
+{
+    "name": "jauhar/jtech",
+    "description": "jtech-framework",
+    "version": "1.0.2",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\": "database/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jauhar imtikhan"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "jauhar/j-tech-framework": "^1.0.5"
+    },
+    "prefer-stable": true
+}
