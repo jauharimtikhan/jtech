@@ -1,7 +1,6 @@
 {
     "name": "jauhar/jtech",
     "description": "jtech-framework",
-    "version": "1.0.2",
     "type": "project",
     "license": "MIT",
     "autoload": {
