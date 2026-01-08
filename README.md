@@ -193,7 +193,7 @@ JTech Framework adalah software open-sourced di bawah lisensi **MIT license**.
 ---
 
 <p align="center">
-&copy; 2026 <strong>JTech Forge</strong>. All rights reserved.
+&copy; 2026 <strong>Jauhar Imtikhan</strong>. All rights reserved.
 </p>
 
 
