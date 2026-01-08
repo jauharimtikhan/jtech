@@ -145,7 +145,7 @@
                 PHP v<?= phpversion() ?>
             </span>
             <span>&bull;</span>
-            <span>JTech v{{app_Version()}}</span>
+            <span>JTech {{app_version()}}</span>
             <span>&bull;</span>
             <span>Environment: <?= env('APP_ENV', 'production') ?></span>
         </div>
