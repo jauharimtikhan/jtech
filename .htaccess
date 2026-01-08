@@ -1,0 +1,25 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # 1. Redirect Trailing Slashes (Opsional, biar SEO friendly)
+    # Kalau buka domain.com/login/ -> dilempar ke domain.com/login
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # 2. Logic Utama: Lempar ke folder public
+    # Kalau request udah mengarah ke 'public/', biarin aja (stop processing)
+    RewriteRule ^public($|/) - [L]
+
+    # Sisa request lainnya, lempar ke folder public
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Block akses ke file/folder sensitif
+<FilesMatch "^\.env|composer\.(json|lock)|package(-lock)?\.json|\.git">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
